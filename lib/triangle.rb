@@ -8,7 +8,7 @@ class Triangle
   end  
   
   def kind 
-    if @a || @b || @c = nil
+    if @a || @b || @c == nil
       raise TriangleError
     if [@a, @b, @c].min <= 0
       raise TriangleError
