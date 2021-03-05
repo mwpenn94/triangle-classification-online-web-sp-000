@@ -10,7 +10,7 @@ class Triangle
   def kind 
     if @a || @b || @c == nil
       raise TriangleError
-    if [@a, @b, @c].min <= 0
+    elsif [@a, @b, @c].min <= 0
       raise TriangleError
     elsif @a + @b <= @c || @a + @c <= @b || @b + @c <= @a
       raise TriangleError
